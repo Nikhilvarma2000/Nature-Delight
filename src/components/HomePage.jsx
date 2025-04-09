@@ -1,6 +1,4 @@
 import React from 'react';
-// Removed unused import
-// import { Link } from 'react-router-dom';  
 import ND1Image from '../components/images/ND1.jpg';  // Adjust path if necessary
 
 const HomePage = () => {
@@ -10,7 +8,7 @@ const HomePage = () => {
       <div className="bg-gradient-to-r from-green-400 to-orange-500 text-white min-h-screen flex items-center justify-center py-20">
         <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between px-6">
           <div className="flex flex-col items-start space-y-6 w-full md:w-1/2">
-            <h1 className="text-5xl font-extrabold text-white leading-tight transition-transform transform duration-500 ease-in-out hover:scale-105">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight transition-transform transform duration-500 ease-in-out hover:scale-105">
               Get Your Monthly Fruit Box Now!
             </h1>
             <p className="text-lg text-gray-100 transition-opacity duration-500 ease-in-out opacity-80 hover:opacity-100">
@@ -18,18 +16,18 @@ const HomePage = () => {
               the joy of eating natural and seasonal fruits, straight from the farm to your table!
             </p>
             {/* Button Container */}
-            <div className="flex space-x-4"> {/* Flexbox for horizontal alignment */} 
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"> {/* Flexbox for responsive layout */}
               {/* Book Now Button */}
               <a
                 href="https://forms.gle/F7RyZ1FiL5iD59Qh6"  // Google Form link
-                className="bg-yellow-400 text-black px-8 py-3 rounded-full font-medium text-xl transition-all duration-300 hover:bg-yellow-500 transform hover:scale-110"
+                className="bg-yellow-400 text-black px-6 py-2 rounded-full font-medium text-lg sm:text-xl transition-all duration-300 hover:bg-yellow-500 transform hover:scale-110"
               >
                 Book Now
               </a>
               {/* Call Now Button */}
               <a
-                href="tel:+1234567890"
-                className="bg-green-500 text-white px-8 py-3 rounded-full font-medium text-xl transition-all duration-300 hover:bg-green-700 transform hover:scale-110"
+                href="tel:+916300104828"
+                className="bg-green-500 text-white px-6 py-2 rounded-full font-medium text-lg sm:text-xl transition-all duration-300 hover:bg-green-700 transform hover:scale-110"
               >
                 Call Now
               </a>
